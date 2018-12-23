@@ -8,7 +8,7 @@ Contain at least two UPPERCASE letters
 Contain at least two lowercase letters
 Contain at least two numbers (0-9)
 Contain at least two of the following special characters:
-# (pound or number sign)]
+\# (pound or number sign)]
 @ (at sign)
 $ (dollar sign)
 = (equal sign)
