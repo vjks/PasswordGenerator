@@ -11,13 +11,20 @@ function main() {
 }
 
 function passGenerator() {
-    var passwordLength = 30;
+    var minPasswordLength = 15;
+    var maxPasswordLength = 30;
+    var passLength = randomIntFromInterval( minPasswordLength, maxPasswordLength );
     var alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#@$=^!*_";
     var passText = "";
 
-    for (var i = 0; i < passwordLength; i++) {
+    for (var i = 0; i < passLength; i++) {
         passText += alphabets.charAt(Math.floor(Math.random() * alphabets.length));
     }
 
-    return "Password is:<br>" + passText;
+    return "Password Length is: " + passLength + "<br>Password is:<br>" + passText;
+}
+
+function randomIntFromInterval( min, max ) // min and max included
+{
+    return Math.floor(Math.random() * ( max - min + 1 ) + min );
 }
