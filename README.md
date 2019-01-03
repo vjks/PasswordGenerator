@@ -3,8 +3,8 @@ https://www.military.com/paycheck-chronicles/2013/06/12/changes-to-mypay-passwor
 
 These are the requirements:
 
-Must be 15 to 30 characters in length
-Contain at least two UPPERCASE letters
+Must be 15 to 30 characters in length - Done
+Contain at least two UPPERCASE letters 
 Contain at least two lowercase letters
 Contain at least two numbers (0-9)
 Contain at least two of the following special characters:
@@ -16,4 +16,4 @@ $ (dollar sign)
 ! (exclamation)
 * (asterisk)
 _ (underline/underscore)
-Must NOT include any spaces
+Must NOT include any spaces - Done
