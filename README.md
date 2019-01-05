@@ -14,6 +14,6 @@ $ (dollar sign) <br>
 = (equal sign) <br>
 ^ (caret) <br>
 ! (exclamation) <br>
-* (asterisk) <br>
+\* (asterisk) <br>
 _ (underline/underscore) <br>
 Must NOT include any spaces <br>
