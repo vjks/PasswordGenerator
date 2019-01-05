@@ -1,4 +1,21 @@
 function main() {
+    // Generate the password length
+    var minPasswordLength = 15;
+    var maxPasswordLength = 30;
+    var passLength = randomIntFromInterval( minPasswordLength, maxPasswordLength );
+
+    // Create an empty array of that length
+    var password = new Array( passLength );
+
+    // Add two uppercase letters to the array
+    password = addTwoUppercaseLetters( password );
+
+    // Fill the rest of the array with random characters
+    password = fillArray( password );
+
+    // Display the Array in the HTML page
+    var li = document.getElementById("pass");
+    li.innerHTML = passText;
     
     var attempt = 0;
     while ( attempt < 100 ) {
@@ -6,10 +23,12 @@ function main() {
       //  if ( passText.includes )
         attempt++;
     }
-    var li = document.getElementById("pass");
-    li.innerHTML = passText;
+
 }
 
+/*
+
+// Functioning Password Generator
 function passGenerator() {
     var minPasswordLength = 15;
     var maxPasswordLength = 30;
@@ -23,8 +42,13 @@ function passGenerator() {
 
     return "Password Length is: " + passLength + "<br>Password is:<br>" + passText;
 }
+*/
 
 function randomIntFromInterval( min, max ) // min and max included
 {
     return Math.floor(Math.random() * ( max - min + 1 ) + min );
+}
+
+function addTwoUppercaseLetters( password ) {
+    return "";
 }
