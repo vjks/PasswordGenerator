@@ -13,21 +13,17 @@ function main() {
     // Fill the rest of the array with random characters
     password = fillArray( password );
 
-    // Display the Array in the HTML page
-    var li = document.getElementById("pass");
-    li.innerHTML = passText;
-    
-    var attempt = 0;
-    while ( attempt < 100 ) {
-        var passText = passGenerator();
-      //  if ( passText.includes )
-        attempt++;
+    // Display the contents of the array in the HTML page
+    var passText = "";  // Initially the variable is empty it will contain the text of the password array
+    for( var i = 0; i < password.length; i++ ) {
+        passText += password[ i ]; 
     }
 
+    var li = document.getElementById("pass");
+    li.innerHTML = passText;
 }
 
 /*
-
 // Functioning Password Generator
 function passGenerator() {
     var minPasswordLength = 15;
@@ -44,11 +40,18 @@ function passGenerator() {
 }
 */
 
-function randomIntFromInterval( min, max ) // min and max included
-{
+function randomIntFromInterval( min, max ) {// min and max included
     return Math.floor(Math.random() * ( max - min + 1 ) + min );
 }
 
-function addTwoUppercaseLetters( password ) {
-    return "";
+function addTwoUppercaseLetters( password, numOfChars ) {
+    var alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    for (var i = 0; i < numOfChars; i++) {
+        passText += alphabets.charAt(Math.floor(Math.random() * alphabets.length));
+    }    
+    return password;
+}
+
+function fillArray( password ) {
+    return password;
 }

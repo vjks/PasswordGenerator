@@ -1,8 +1,11 @@
 - Generate the password length
 - Create an empty array of that length
 - Add two uppercase letters to the array in random positions
+	- Generate two random characters
+	- Generate two random numbers within a range
+	- Add the two random characters at the two random locations within the password Array
 - Add two lowercase letters in random positions 
 - Add two numbers (0-9) in random positions
 - Randomly select two special characters (#, @, $, =, ^, !, *, _ )
 - Fill the rest of the array with random characters
-- Display the Array in the HTML page
+- Display the contents of the array in the HTML page
